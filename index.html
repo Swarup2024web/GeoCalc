@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Triangle Construction Simulator - SAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Triangle Construction (SAS)</h1>
-
-  <div id="controls">
-    <label>AB (cm): <input type="number" id="sideAB" value="100"></label>
-    <label>∠ABC (degrees): <input type="number" id="angleB" value="50"></label>
-    <label>BC (cm): <input type="number" id="sideBC" value="80"></label>
-    <button onclick="startConstruction()">Start Construction</button>
+  <div class="container glass">
+    <h1>Triangle Construction - SAS</h1>
+    <div class="controls">
+      <label>AB (cm): <input type="number" id="sideAB" value="80"></label>
+      <label>∠ABC (°): <input type="number" id="angleB" value="50"></label>
+      <label>BC (cm): <input type="number" id="sideBC" value="60"></label>
+      <div class="buttons">
+        <button onclick="startConstruction()">Start</button>
+        <button onclick="nextStep()">Next Step</button>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
   </div>
-
-  <canvas id="canvas" width="800" height="500"></canvas>
-
   <script src="script.js"></script>
 </body>
 </html>
