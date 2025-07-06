@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   padding: 20px;
   border-radius: 25px;
@@ -58,6 +58,7 @@ input {
 .buttons {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 }
 
 button {
@@ -82,3 +83,15 @@ canvas {
   border-radius: 20px;
   box-shadow: inset 4px 4px 10px #ccc, inset -4px -4px 10px #fff;
 }
+
+.step-log {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  box-shadow: inset 3px 3px 6px #ccc, inset -3px -3px 6px #fff;
+  max-height: 150px;
+  overflow-y: auto;
+  }
