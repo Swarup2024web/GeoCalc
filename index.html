@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Realistic Triangle Construction - SAS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triangle Construction Simulator - SAS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container glass">
-    <h1>SAS Triangle Construction (Realistic Tools)</h1>
+    <h1>Triangle Construction (SAS - Realistic Tools)</h1>
     <div class="controls">
-      <label>AB (cm): <input type="number" id="sideAB" value="5"></label>
-      <label>∠ABC (°): <input type="number" id="angleB" value="50"></label>
-      <label>BC (cm): <input type="number" id="sideBC" value="4"></label>
+      <label>AB (cm): <input type="number" id="sideAB" value="5" /></label>
+      <label>∠ABC (°): <input type="number" id="angleB" value="50" /></label>
+      <label>BC (cm): <input type="number" id="sideBC" value="4" /></label>
       <div class="buttons">
         <button onclick="startConstruction()">Start</button>
         <button onclick="nextStep()">Next Step</button>
       </div>
     </div>
     <canvas id="canvas"></canvas>
+    <div class="step-log" id="stepLog"></div>
   </div>
   <script src="script.js"></script>
 </body>
